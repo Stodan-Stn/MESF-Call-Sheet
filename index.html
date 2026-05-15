@@ -201,12 +201,11 @@
     .meta-item:last-child { border-bottom: none; }
     .dyn-row.team-fields .fields, .dyn-row.dress-fields .fields, .dyn-row.contact-fields .fields { grid-template-columns: 1fr; }
   }
-  @media print {
-    .action-bar, .edit-overlay, .toast, .slot-remove-btn, .slot-img-remove, .add-photo-btn, .photo-slots-header { display: none !important; }
-    .photo-upload-box { border: none !important; min-height: 0 !important; }
+@media print {
+    .action-bar, .edit-overlay, .toast { display: none !important; }
     body { background: white; color: black; }
     body::before { display: none; }
-    :root { --bg:#fff;--surface:#f8f8f8;--surface2:#f0f0f0;--border:#e0e0e0;--border2:#ebebeb;--text:#111;--text-muted:#888;--text-dim:#ccc;--gold-dim:rgba(180,130,20,0.08);--gold-border:rgba(180,130,20,0.2); }
+    :root { --bg:#fff; --surface:#f8f8f8; --surface2:#f0f0f0; --border:#e0e0e0; --border2:#ddd; --text:#111; --text-muted:#555; --text-dim:#999; --gold:#111; --gold-dim:rgba(0,0,0,0.05); --gold-border:rgba(0,0,0,0.15); }
   }
 </style>
 </head>
